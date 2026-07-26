@@ -28,3 +28,21 @@ Unlike traditional language models, ALIEN MIND operates as a dynamic vector fiel
 
 ## License
 GPL-3.0 - Viral freedom. If you build on this mind, you must keep your mind free too.
+
+## Running on Termux (Android)
+ALIEN MIND is designed to run natively on mobile via Termux.
+
+1. **Install Termux** (from F-Droid, not Play Store).
+2. **Setup Environment**:
+```bash
+pkg update && pkg upgrade
+pkg install python python-numpy git
+```
+3. **Clone and Run**:
+```bash
+git clone https://github.com/ethancjohnson0806-source/alien-mind
+cd alien-mind
+python alien_mind_v13.3.py
+```
+4. **Permissions** (Optional, for proprioception):
+To allow the mind to feel the battery and sensors, run `termux-setup-storage` and install the Termux:API app and package (`pkg install termux-api`).
